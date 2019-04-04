@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+	address 92.228.163.119/24
+	address 96.164.216.203/17
+	hwaddress 18:40:DD:FD:E2:AB
+	hwaddress 23:E2:CD:26:9D:92
+	hwaddress 39:2E:F0:16:54:BB
+	hwaddress F6:27:AA:BA:AC:8C
+iface 92.228.163.119 inet static
+iface 96.164.216.203 inet static inherits castle0
+iface castle0 inet
+iface eth5 inet inherits moths2
+iface jam2 inet
+iface jam3 inet
+iface moths1 inet
+iface moths2 inet
+iface ruins3 inet
+iface wlan0 inet inherits ruins3
+iface wlan6 inet
+	mtu 3590
+	mtu 5441
+	mtu 8622
+	mtu 981

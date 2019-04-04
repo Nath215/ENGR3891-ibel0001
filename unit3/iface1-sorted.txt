@@ -1,0 +1,15 @@
+
+
+
+
+
+	address 5.196.112.59/28
+	hwaddress 03:BA:C4:25:30:A7
+	hwaddress 76:59:7F:7B:C4:81
+iface 5.196.112.59 inet static inherits wealth1
+iface castle0 inet
+iface eth2 inet inherits wealth1
+iface ftdi0 inet inherits castle0
+iface wealth1 inet
+	mtu 4751
+	mtu 6367

@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+	address 46.132.172.205/27
+	address 80.221.60.195/7
+	address 82.250.4.205/2
+	hwaddress 01:9B:DC:A5:1D:70
+	hwaddress AF:93:1C:7A:04:FC
+	hwaddress B8:3E:49:20:C6:E2
+iface 46.132.172.205 inet static
+iface 80.221.60.195 inet static
+iface 82.250.4.205 inet static inherits wealth0
+iface ftdi1 inet
+iface jam2 inet
+iface moths1 inet
+iface ruins2 inet
+iface wealth0 inet
+iface wlan3 inet
+iface wlan6 inet inherits moths1
+	mtu 4946
+	mtu 6414
+	mtu 7114
