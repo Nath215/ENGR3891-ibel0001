@@ -22,8 +22,8 @@ iface jam1 inet static inherits wealth2
 iface jam5 inet static
 iface ruins0 inet static
 iface wealth2 inet static
-iface wlan0 inet inherits wealth2 dhcp
-iface wlan3 inet inherits ruins0 dhcp
+iface wlan0 inet dhcp inherits wealth2
+iface wlan3 inet dhcp inherits ruins0
 iface wlan4 inet static inherits wealth2
 iface wlan6 inet static
 	mtu 5071
