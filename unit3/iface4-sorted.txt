@@ -12,7 +12,6 @@
 	hwaddress 65:8B:F8:1B:24:1F
 	hwaddress A2:4D:C1:BC:80:C2
 	hwaddress DA:A3:63:9D:B5:99
-iface 41.84.124.126 inet static inherits moths2
 iface ftdi0 inet
 iface moths1 inet
 iface moths2 inet
@@ -20,6 +19,7 @@ iface ruins0 inet
 iface ruins3 inet
 iface wealth4 inet
 iface wlan1 inet inherits ruins3
+iface wlan2 inet static inherits moths2
 	mtu 2635
 	mtu 4835
 	mtu 4932

@@ -14,10 +14,10 @@
 	hwaddress 01:9B:DC:A5:1D:70
 	hwaddress AF:93:1C:7A:04:FC
 	hwaddress B8:3E:49:20:C6:E2
-iface 46.132.172.205 inet static
-iface 80.221.60.195 inet static
-iface 82.250.4.205 inet static inherits wealth0
 iface ftdi1 inet
+iface ftdi4 inet static inherits wealth0
+iface ftdi5 inet static
+iface jam0 inet static
 iface jam2 inet
 iface moths1 inet
 iface ruins2 inet
