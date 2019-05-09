@@ -14,16 +14,16 @@
 	hwaddress 01:9B:DC:A5:1D:70
 	hwaddress AF:93:1C:7A:04:FC
 	hwaddress B8:3E:49:20:C6:E2
-iface ftdi1 inet
+iface ftdi1 inet dhcp
 iface ftdi4 inet static inherits wealth0
 iface ftdi5 inet static
 iface jam0 inet static
-iface jam2 inet
-iface moths1 inet
-iface ruins2 inet
-iface wealth0 inet
-iface wlan3 inet
-iface wlan6 inet inherits moths1
+iface jam2 inet dhcp
+iface moths1 inet static
+iface ruins2 inet static
+iface wealth0 inet static
+iface wlan3 inet dhcp
+iface wlan6 inet inherits moths1 dhcp
 	mtu 4946
 	mtu 6414
 	mtu 7114

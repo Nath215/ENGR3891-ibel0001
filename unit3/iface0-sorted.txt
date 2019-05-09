@@ -16,14 +16,14 @@
 	hwaddress 2C:D1:07:4F:D6:A1
 	hwaddress 41:94:F4:7F:0D:42
 	hwaddress 42:9B:7E:52:86:B3
-iface castle1 inet
+iface castle1 inet static
 iface eth2 inet static
 iface jam1 inet static inherits wealth2
 iface jam5 inet static
-iface ruins0 inet
-iface wealth2 inet
-iface wlan0 inet inherits wealth2
-iface wlan3 inet inherits ruins0
+iface ruins0 inet static
+iface wealth2 inet static
+iface wlan0 inet inherits wealth2 dhcp
+iface wlan3 inet inherits ruins0 dhcp
 iface wlan4 inet static inherits wealth2
 iface wlan6 inet static
 	mtu 5071

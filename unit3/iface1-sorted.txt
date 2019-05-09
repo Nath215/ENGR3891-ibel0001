@@ -6,10 +6,10 @@
 	address 5.196.112.59/28
 	hwaddress 03:BA:C4:25:30:A7
 	hwaddress 76:59:7F:7B:C4:81
-iface castle0 inet
+iface castle0 inet static
 iface eth1 inet static inherits wealth1
-iface eth2 inet inherits wealth1
-iface ftdi0 inet inherits castle0
-iface wealth1 inet
+iface eth2 inet inherits wealth1 dhcp
+iface ftdi0 inet inherits castle0 dhcp
+iface wealth1 inet static
 	mtu 4751
 	mtu 6367
