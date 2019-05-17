@@ -15,8 +15,8 @@ outputpoints=$((60 - deduct))
 # Size points only apply if you can get 100% on the correctness.
 sizepoints=0
 size=`cat $1 | wc -c`
-if [ $size -le 2466 ]; then sizepoints=5; fi
-if [ $size -le 1853 ]; then sizepoints=15; fi
+if [ $size -le 2284 ]; then sizepoints=5; fi
+if [ $size -le 1762 ]; then sizepoints=15; fi
 if [ $size -le 1241 ]; then sizepoints=25; fi
 if [ $size -le 1054 ]; then sizepoints=40; fi
 if [ $differentlines -gt 0 ]; then sizepoints=0; fi
